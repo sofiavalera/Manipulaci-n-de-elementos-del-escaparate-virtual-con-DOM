@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pilar Fernández Valcarcel</title>
+        <meta name="description" content="Maquillaje">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/text.css"/>
+        <link rel="stylesheet" href="css/960_12_col.css"/>
+        <!--<link rel="stylesheet" href="css/main.css"/>-->
+        <link rel="stylesheet" href="css_generado/style.css"/>
+        <link rel="stylesheet" href="css/carrusel.css"/>
+        <!--Efecto Scroll-->
+        <link rel="stylesheet" href="css/scroll.css"/>
+        <!--Importar Iconos-->
+        <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css"/> 
+        <!--Importar librerias JQuery-->
+        <script src="Js/jquery-3.2.1.js"></script>
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <!--Contenedor global de 12 columnas-->
+        <div class="container_12">
+        <header class="cabeceraFija">
+            <!--Logo-->
+            <div class="fondo">
+            <div class="grid_7 prefix_1">
+                <div class="logo">
+                    <h1>Pilar Fernández Valcarcel</h1>
+                </div>    
+            </div>
+            <!--Search-->
+            <div class="grid_4">
+                <div class="search">
+                    <form action="#">
+                    <p>
+                       <input placeholder="Buscar" type="text" name="buscar" id="buscar" />
+                       <input type="submit" class="lupa" value="." title="buscar" />    
+                    </p>
+                    </form>
+                </div>
+            </div>
+            <div class="clear"></div>    
+            </div>
+            <!--flecha-->
+            <span class="ir-arriba fa fa-arrow-up"></span>
+            <nav> 
+                <div class="fondo">
+                <div class="grid_7 suffix_1 ">
+                    <!--menu-->
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="menuDes"><a href="#">Tienda</a>
+                                <ul class="desplegable">
+                                    <li><a href="#">Cara</a></li>
+                                    <li><a href="#">Ojos</a></li>
+                                    <li><a href="#">Labios</a></li>
+                                </ul>
+                            </li>    
+                            <li><a href="#">A domicilio</a></li>
+                            <li><a href="#">Galeria</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <!--Login/registro-->
+                    <div class="enlaces">
+                        <a href="#">Ayuda |</a>        
+                        <a href="logIn.html" id="log" onclick="return cerrarSesion()">Log in | </a>
+                        <a href="registro.html">Registro</a>
+                    </div>
+                </div>  
+                <div class="grid_1">
+                    <!--carritoCompra-->
+                    <div class="carrito">
+                         <a href="#" target="_blank"><img src="Img/carrito.png" alt="carro compra"></a>
+                    </div>    
+                </div>
+                <div class="clear"></div>
+                </div>
+            </nav> 
+        </header> 
+        <section>
+            <div class="alpha grid_12">
+                <!--FotoPrincipalDeLaPagina
+                <div class="fotoPrincipal"> 
+                    <img src="Img/fotoPortada.png" alt="foto principal">
+                </div>-->
+                <!--Slider o carrusel-->
+                <div class="slideshow">
+                    <ul class="slider">
+                        <li>
+                            <img src="Img/Carrusel/foto1.png" alt="1">
+                        </li>
+                        <li>
+                            <img src="Img/Carrusel/foto2.jpg" alt="2">
+                            <section class="caption">
+                                <h1>Sesion 1</h1>
+                            </section>
+                        </li>
+                        <li>
+                            <img src="Img/Carrusel/foto3.jpg" alt="3">
+                            <section class="caption">
+                                <h1>Sesion 2</h1>
+                            </section>
+                        </li>
+                        <li>
+                            <img src="Img/Carrusel/foto4.jpg" alt="4">
+                            <section class="caption">
+                                <h1>Halloween</h1>
+                            </section>
+                        </li>
+                    </ul>
+                    <!--iconos circulo-->
+                    <ol class="circulos">
+                         <!--<li><span class="fa fa-circle"></span></li>
+                         <li><span class="fa fa-circle"></span></li>
+                         <li><span class="fa fa-circle"></span></li>
+                         <li><span class="fa fa-circle"></span></li>-->
+                    </ol>
+                    <!--iconos flechas-->
+                    <div class="left">
+                        <span class="fa fa-chevron-left"></span>
+                    </div>
+                    <div class="right">
+                        <span class="fa fa-chevron-right"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="fondo">
+            <div class="grid_4 prefix_4 suffix_4">
+                <!--ImagenDeUnProductoDestacados-->
+                <div class="productosDestacados">
+                    <h2>Productos destacados</h2>
+                    <div class="productos">
+                        <img src="Img/maquillaje.jpg" alt="producto destacado">
+                    </div>
+                </div>    
+            </div>
+            <div class="clear"></div>
+            <div class="grid_2 prefix_5 suffix_5">
+                <!--BotonParaVerTodos-->
+                 <div class="verTodos">                     
+                        <a href="verTodos.html"><img src="Img/BotonFrame.png" alt="ver todos los productos"></a>
+                  </div>
+                </div>  
+            <div class="clear"></div>
+            <div class="grid_12">
+                <!--opiniones clientes-->
+                <div class="opiniones">
+                    <div class="sep"></div>
+                    <p>Opiniones de nuestros clientes <i class="fa fa-comments"></i></p>
+                    <div class="sep"></div>
+                </div>
+            </div> 
+            <div class="clear"></div>    
+            <div class="grid_12">
+                <div class="container cf">
+                <!-- comentario 1 -->
+                <div class="animation-element slide-left testimonial">
+                  <div class="header">
+                    <div class="left">
+                      <img src="Img/portada/cara1.png" alt="comentario1"/>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <div class="content"><i class="fa fa-quote-left"></i> ¡¡Me encanta este sitio web!! <i class="fa fa-quote-right"></i>
+                  </div>
+                </div>
+                <!--comentario 2-->
+                <div class="animation-element slide-left testimonial">
+                  <div class="header">
+                    <div class="left">
+                      <img src="Img/portada/cara2.jpg"  alt="comentario2"/>
+                    </div>
+                  </div>
+                 <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                  <div class="content"><i class="fa fa-quote-left"></i> contrate sus servicios y me han fascinado! <i class="fa fa-quote-right"></i>
+                  </div>
+                </div>
+                <!--comentario 3 -->
+                <div class="animation-element slide-left testimonial">
+                  <div class="header">
+                    <div class="left">
+                      <img src="Img/portada/cara3.jpg" alt="comentario3"/>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="content"><i class="fa fa-quote-left"></i> El maquillaje es una extension de la personalidad <i class="fa fa-quote-right"></i>
+                  </div>
+                </div>
+                <!--comentario 4 -->
+                <div class="animation-element slide-left testimonial">
+                  <div class="header">
+                    <div class="left">
+                      <img src="Img/portada/cara4.jpg" alt="comentario4"/>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                  <div class="content"><i class="fa fa-quote-left"></i> Productos de maquillaje excelentes <i class="fa fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="clear"></div>
+            </div>      
+        </section>
+        <footer>
+        <div id="fondoImagen">
+            <!--IconosRedesSociales-->
+                <div class="grid_2 prefix_5 suffix_5">
+                    <div class="sigueme">
+                        <p>Sigueme en</p>
+                    </div>    
+                </div>  
+                <div class="grid_4 prefix_4 suffix_4">  
+                    <div class="iconosRedes">
+                        <ul class="icon">
+                            <li class="icon1">
+                                <a href="#" target="_blank"><img src="img/iconoInstagram.png" alt="instagram"></a>
+                            </li>
+                            <li class="icon2">
+                                <a href="#" target="_blank"><img src="img/iconoFacebook.png" alt="facebook"></a>
+                            </li>
+                            <li class="icon3">
+                                <a href="#" target="_blank"><img src="img/iconoPinterest.png" alt="pinterest"></a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="fondoImagen2">
+            <div class="grid_8 prefix_2 suffix_2">
+                <!--Enlaces a los avisos legales-->
+                <div class="avisosLegales">
+                    <ul class="avisos">
+                        <li>
+                            <a href="#" target="_blank">LEGAL</a>
+                            <ul class="desplegable_avisos">
+                                <li><a href="#">Aviso Legal</a></li>
+                                <li><a href="#">Privacidad</a></li>
+                                <li><a href="#">Condiciones de uso &amp; venta</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                           <a href="#"  target="_blank">ACERCA DE</a>
+                             <ul class="desplegable_avisos">
+                                <li><a href="#">Contactar</a></li>
+                                <li><a href="#">Acerca de </a></li>
+                                <li><a href="#">Trabajar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"  target="_blank">PRODUCTOS</a>
+                            <ul class="desplegable_avisos">
+                                <li><a href="#">Pedidos/Devoluciones</a></li>
+                                <li><a href="#">Envio/Entrega</a></li>
+                                <li><a href="#">Productos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_8 prefix_2 suffix_2">
+                <!--LineaSeparaxion-->
+                <div class="line">
+                    <img src="img/Line.png" alt="linea separacion">
+                </div>
+                <!--Copy con correo enlazado-->
+                <div class="copy">
+                    <a href="#"  target="_blank"><p>&copy;Pilarfernandezvalcarcel@gmail.com</p></a>
+                </div>
+                <!--Componente de geolocalizacion-->
+                <div class="geo">
+                    <a href="#"  target="_blank"><img src="img/geo_icon.png" alt="geo"></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--Aviso cookies-->    
+            <div id="barraaceptacion" style="display: block;">
+                <div class="mensaje">
+                    Solicitamos su permiso para obtener datos de su navegación, en cumplimiento del Real Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+                    <a href="javascript:void(0);" class="ok" onclick="ok();"><b>OK</b></a> | 
+                    <a href="http://politicadecookies.com" target="_blank" class="info">Más información</a>
+                </div>    
+            </div>  
+            </div>    
+        </footer>
+        </div>
+        <!--Importacion de scripts-->
+        <script src="Js/carrusel.js"></script>
+        <script src="Js/flecha.js"></script>
+        <script src="Js/cookies.js"></script>
+        <script src="Js/scroll.js"></script>
+        <script src="Js/validarLogIn.js"></script>
+    </body>
+</html>
